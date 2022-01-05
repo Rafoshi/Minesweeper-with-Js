@@ -4,8 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	let squares = [];
 	let flags = 0;
 	let bombAmout = 15;
+	let flagsLeft = bombAmout;
 	let isGameOver = false;
 	const resetFace = document.querySelector(".reset");
+	const flagCounter = document.querySelector(".flags-count");
+
+	flagCounter.innerHTML = flagsLeft;
 
 	resetFace.addEventListener("click", function (e) {
 		reset();
@@ -81,14 +85,22 @@ document.addEventListener("DOMContentLoaded", () => {
 				square.classList.add("flag");
 				square.innerHTML = "🚩";
 				flags++;
-
+				increaseFlagCounter(false);
 				checkForWin();
 			} else {
 				square.classList.remove("flag");
 				square.innerHTML = "";
 				flags--;
+				increaseFlagCounter(true);
 			}
 		}
+	}
+
+	function increaseFlagCounter(increase) {
+		if (increase) flagsLeft++;
+		else flagsLeft--;
+
+		flagCounter.innerHTML = flagsLeft;
 	}
 
 	function click(square) {

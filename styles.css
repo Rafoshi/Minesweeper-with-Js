@@ -34,5 +34,18 @@ body {
 	background-color: red;
 }
 
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 50vw;
+}
+
 .flags-count {
+	font-size: 32px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.flag {
+	font-size: 32px;
 }
