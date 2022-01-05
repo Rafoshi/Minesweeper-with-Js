@@ -1,0 +1,19 @@
+.board {
+	height: 400px;
+	width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: grey;
+}
+
+.board div {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.checked {
+	background-color: red;
+}
