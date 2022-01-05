@@ -189,7 +189,8 @@ document.addEventListener("DOMContentLoaded", () => {
 				matches++;
 			}
 			if (matches === bombAmout) {
-				alert("Você ganhou!");
+				window.alert("Você ganhou!");
+
 				//Mudar
 			}
 		}
