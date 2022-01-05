@@ -49,3 +49,63 @@ body {
 .flag {
 	font-size: 32px;
 }
+
+@media (max-width: 890px) {
+	.board {
+		height: 700px;
+		width: 700px;
+	}
+
+	.board div {
+		height: 70px;
+		width: 70px;
+	}
+}
+
+@media (max-width: 730px) {
+	.board {
+		height: 600px;
+		width: 600px;
+	}
+
+	.board div {
+		height: 60px;
+		width: 60px;
+	}
+}
+
+@media (max-width: 630px) {
+	.board {
+		height: 500px;
+		width: 500px;
+	}
+
+	.board div {
+		height: 50px;
+		width: 50px;
+	}
+}
+
+@media (max-width: 525px) {
+	.board {
+		height: 400px;
+		width: 400px;
+	}
+
+	.board div {
+		height: 40px;
+		width: 40px;
+	}
+}
+
+@media (max-width: 410px) {
+	.board {
+		height: 300px;
+		width: 300px;
+	}
+
+	.board div {
+		height: 30px;
+		width: 30px;
+	}
+}
