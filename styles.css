@@ -83,6 +83,7 @@ body {
 	.board div {
 		height: 50px;
 		width: 50px;
+		font-size: 1.5rem;
 	}
 }
 
@@ -95,6 +96,7 @@ body {
 	.board div {
 		height: 40px;
 		width: 40px;
+		font-size: 1.5rem;
 	}
 }
 
@@ -102,10 +104,12 @@ body {
 	.board {
 		height: 300px;
 		width: 300px;
+		font-size: 1.5rem;
 	}
 
 	.board div {
 		height: 30px;
 		width: 30px;
+		font-size: 1.5rem;
 	}
 }
