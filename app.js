@@ -3,8 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	let width = 10;
 	let squares = [];
 	let flags = 0;
-	let bombAmout = 10;
+	let bombAmout = 15;
 	let isGameOver = false;
+	const resetFace = document.querySelector(".reset");
+
+	resetFace.addEventListener("click", function (e) {
+		reset();
+	});
 
 	function createBoard() {
 		const bombsArray = Array(bombAmout).fill("bomb");
@@ -173,7 +178,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 			if (matches === bombAmout) {
 				alert("Você ganhou!");
+				//Mudar
 			}
 		}
 	}
 });
+
+function reset() {
+	document.location.reload(true);
+}
